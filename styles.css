@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #4B4B4B;       /* Steel Gray – base background or header */
+    --secondary-color: #C0C0C0;     /* Chrome Silver – cards, borders, accents */
+    --tertiary-color: #00BFFF;      /* Electric Blue – buttons, links, highlights */
+    --quaternary-color: #1A1A1A;    /* Cyber Black – text, overlays, contrast zones */
+    --quinary-color: #39FF14;       /* Neon Green – call-to-action emphasis */
+    --senary-color: #2F4F4F;        /* Graphite – nav bar, secondary backgrounds */
+    --septenary-color: #F5F5F5;     /* Titanium White – clean zones, form inputs */
+    --octonary-color: #808080;      /* Industrial Gray – neutral containers */
+    --font-size-base: 16px;
+
+}
+
+body {
+    font-family: "Bitcount Grid Single", system-ui;
+    display: grid;
+    grid-template-columns: repeat(1, 10fr);
+    grid-template-rows: repeat(1, 11fr);
+    grid-template-areas: 
+    "he he he he he he he he he he"
+    "ma ma ma ma ma ga ga ga ga ga"
+    "ma ma ma ma ma ga ga ga ga ga"
+    "ma ma ma ma ma ga ga ga ga ga"
+    "ma ma ma ma ma ga ga ga ga ga"
+    "ma ma ma ma ma ga ga ga ga ga"
+    "te te te te te fo fo fo fo fo"
+    "te te te te te fo fo fo fo fo"
+    "te te te te te fo fo fo fo fo"
+    "te te te te te fo fo fo fo fo"
+    "pi pi pi pi pi pi pi pi pi pi"
+}
+
+.header {
+    grid-area: he;
+}
+.main {
+    grid-area: ma;
+}
+.galeria {
+    grid-area: ga;
+}
+.testimonio {
+    grid-area: te;
+}
+.formulario {
+    grid-area: fo;
+}
+.pie-pagina {
+    grid-area: pi;
+}
+
+
+.header {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-areas: "lo . . . . in fa ub me co";
+}
+
+.logo {
+    grid-area: lo;
+}
+.ingresar {
+    grid-area: in;
+}
+.favoritos {
+    grid-area: fa;
+}
+.ubicacion {
+    grid-area: ub;
+}
+.menu {
+    grid-area: me;
+}
+.contacto {
+    grid-area: co;
+}
+
+.header__enlace {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+
+
+
+
