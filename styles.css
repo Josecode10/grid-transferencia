@@ -59,7 +59,7 @@ body {
 .header {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
-    grid-template-areas: "lo . . . . in fa ub me co";
+    grid-template-areas: "lo . . . in fa ub ca me co";
 }
 
 .logo {
@@ -74,6 +74,9 @@ body {
 .ubicacion {
     grid-area: ub;
 }
+.carrito {
+    grid-area: ca;
+}
 .menu {
     grid-area: me;
 }
@@ -87,6 +90,12 @@ body {
     align-items: center;
     text-align: center;
     justify-content: center;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
 }
 
 
