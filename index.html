@@ -85,15 +85,43 @@
     </section>
 
     <div class="contenedor-testimonios-formulario">
-        <section class="testimonio">
-            <h1>Testimonios</h1>
-            <i class="fa-solid fa-user-astronaut"></i>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio nobis fuga quaerat repellendus nesciunt, omnis, doloremque nostrum autem voluptatem cumque natus dolores cupiditate eum.</p>
-    
-        </section>
+        <div class="contenedor-testimonios">
+            <h1 class="contenedor-testimonio-titulo">Testimonios</h1>
+            <section class="contenedor-testimonio">
+                <i class="fa-solid fa-user-astronaut contenedor-testimonio-avatar"></i>
+                <h3 class="contenedor-testimonio-usuario">John Doe</h3>
+                <p class="contenedor-testimonio-comentario">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio nobis fuga quaerat repellendus nesciunt, omnis, doloremque nostrum autem voluptatem cumque natus dolores cupiditate eum.</p>
+            </section>
+            <section class="contenedor-testimonio">
+                <i class="fa-regular fa-face-frown contenedor-testimonio-avatar"></i>
+                <h3 class="contenedor-testimonio-usuario">Jane Doe</h3>
+                <p class="contenedor-testimonio-comentario">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio nobis fuga quaerat repellendus nesciunt, omnis, doloremque nostrum autem voluptatem cumque natus dolores cupiditate eum.</p>
+            </section>
+        </div>
+
     
         <section class="formulario">
-            <h1>Subcripcioón a boletines</h1>
+            <form class="contenedor-formulario">
+                <h2 class="formulario-titulo">Suscripción a nuestro boletines</h2>
+            
+                <div class="formulario-nombre">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="user_name" required>
+                </div>
+                
+                <div class="formulario-correo">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="user_email" required>
+                </div>
+                
+                <div class="formulario-caja-texto">
+                    <label for="message">Interés / Mensaje (Opcional):</label>
+                    <textarea id="message" name="user_message" rows="4"></textarea>
+                </div>
+                
+                <button type="submit" class="formulario-boton">Sign up</button>
+            </form>
+            
         </section>
     </div>
 
