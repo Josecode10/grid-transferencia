@@ -8,14 +8,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Single:wght@100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Single:wght@100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Contendrá el logo o nombre de la marca y un menú de navegación con al 
-    menos cuatro enlaces. 
-    El menú debe estar distribuido mediante grid-template-columns o áreas de grid. 
-    Incluye un botón destacado tipo “Call to Action” (por ejemplo, Contáctanos o Ver 
-    más).  -->
     <header class="header">
         <a href="" class="header__enlace logo"><i class="fa-solid fa-robot"></i></a>
         <a href="#" class="header__enlace ingresar"><i class="fa-solid fa-user"></i>
@@ -37,37 +32,74 @@
         </a>
     </header>
 
-    <!-- Un bloque visual con imagen de fondo o banner. 
-    Incluye un título principal, subtítulo y un botón de acción. 
-    GFPI-F-135 V04 
-    Utiliza grid con celdas en capas para superponer texto o botones sobre la 
-    imagen. -->
-    <main class="main">
-        <h1 class="main__titulo">¡Modelo más vendido!</h1>
-        <h2 class="main__subtitulo">No tenemos competencia.</h2>
-        <img src="src/img/main-robot.png" alt="main-robot" class="main__imagen">
-        <button class="main__boton">Comprar!</button>
-    </main>
-
-    <section class="galeria">
-
-
+    <section class="contenedor-main-galeria">
+        <main class="contenedor-main">
+            <div class="contenedor-main-titulos">
+                <h1>MÁS VENDIDO</h1>
+                <h2 >Los mejores robots del mercado</h2>
+            </div>
+            <div class="contenedor-main-imagen-boton">
+                <img class="contenedor-main-imagen" src="src/img/main-robot.png" alt="main" >
+                <input type="button" class="contenedor-main-boton" value="Agregar al carrito" onclick="alert('Agregado al carrito')">
+            </div>
+        </main>
+    
+        <div class="contenedor-galeria">
+            <h1 class="galeria__titulo">Destacados</h1>
+            <div class="galeria__imagenes">
+                <div class="contenedor-imagen">
+                    <h1>Imagen 1</h1>
+                    <img src="src/img/49ers.png" alt="" class="contenedor-imagen__elemento">
+                </div>
+                <div class="contenedor-imagen">
+                    <h1>Imagen 2</h1>
+                    <img src="src/img/chiefs.png" alt="" class="contenedor-imagen__elemento">
+                </div>
+                <div class="contenedor-imagen">
+                    <h1>Imagen 3</h1>
+                    <img src="src/img/cowboys.png" alt="" class="contenedor-imagen__elemento">
+                </div>
+                <div class="contenedor-imagen">
+                    <h1>Imagen 4</h1>
+                    <img src="src/img/eagles.png" alt="" class="contenedor-imagen__elemento">
+                </div>
+                <div class="contenedor-imagen">
+                    <h1>Imagen 5</h1>
+                    <img src="src/img/packers.png" alt="" class="contenedor-imagen__elemento">
+                </div>
+                <div class="contenedor-imagen">
+                    <h1>Imagen 6</h1>
+                    <img src="src/img/steelers.png" alt="" class="contenedor-imagen__elemento">
+                </div>
+                <div class="contenedor-imagen">
+                    <h1>Imagen 6</h1>
+                    <img src="src/img/steelers.png" alt="" class="contenedor-imagen__elemento">
+                </div>
+                <div class="contenedor-imagen">
+                    <h1>Imagen 6</h1>
+                    <img src="src/img/steelers.png" alt="" class="contenedor-imagen__elemento">
+                </div>
+            </div>
+        </div>
+        
     </section>
 
-    <section class="testimonio">
+    <div class="contenedor-testimonios-formulario">
+        <section class="testimonio">
+            <h1>Testimonios</h1>
+            <i class="fa-solid fa-user-astronaut"></i>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio nobis fuga quaerat repellendus nesciunt, omnis, doloremque nostrum autem voluptatem cumque natus dolores cupiditate eum.</p>
+    
+        </section>
+    
+        <section class="formulario">
+            <h1>Subcripcioón a boletines</h1>
+        </section>
+    </div>
 
-    </section>
-
-    <section class="formulario">
-
-    </section>
-
+    
     <footer class="pie-pagina">
-        <label for="tac">
-        <input id="tac" type="checkbox" name="terms-and-conditions" />
-        I agree to the <a href="terms-and-conditions.html">Terms and Conditions</a>
-        </label>
-
+        <h1>Espacio para el pie de pagina</h1>
     </footer>
 </body>
 </html>
