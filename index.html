@@ -102,9 +102,9 @@
     
         <section class="formulario">
             <form class="contenedor-formulario">
-                <h2 class="formulario-titulo">Suscripción a nuestro boletines</h2>
+                <h1 class="formulario-titulo">Suscripción a nuestro boletines</h1>
             
-                <div class="formulario-nombre">
+                <div class="formulario-nombre formulario-elemento">
                     <label for="name">Name:</label>
                     <input type="text" id="name" name="user_name" required>
                 </div>
@@ -116,10 +116,10 @@
                 
                 <div class="formulario-caja-texto">
                     <label for="message">Interés / Mensaje (Opcional):</label>
-                    <textarea id="message" name="user_message" rows="4"></textarea>
+                    <textarea id="message" name="user_message" rows="6"></textarea>
                 </div>
                 
-                <button type="submit" class="formulario-boton">Sign up</button>
+                <input type="button" value="Enviar" class="formulario-boton" onclick="alert('Información enviada')">
             </form>
             
         </section>
