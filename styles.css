@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+/* Establecer variables para colores */
 :root {
     --primary-color: #4B4B4B;       /* Steel Gray – base background or header */
     --secondary-color: #C0C0C0;     /* Chrome Silver – cards, borders, accents */
@@ -23,10 +24,11 @@ body {
     background-color: var(--quinary-color);
 }
 
+
 .header {
     background-color: var(--octonary-color);
-    display: grid;
-    grid-template-columns: repeat(10, 1fr);
+    display: grid; /* Volver el header un contenedor grid */
+    grid-template-columns: repeat(10, 1fr); /* Establecer 10 columnas iguales */
     grid-template-areas: "lo . . . in fa ub ca me co";
     font-size: 15px;
     padding-top: 20px;
@@ -35,7 +37,7 @@ body {
 }
 
 .header__enlace {
-    display: flex;
+    display: flex; /* Volver el header un contenedor grid */
     flex-direction: column;
     align-items: center;
     text-align: center;
@@ -92,8 +94,8 @@ body {
 
 .contenedor-main-imagen-boton {
     height: 80%;
-    display: grid;
-    grid-template-columns: 1fr;
+    display: grid; /* Volver contenedor-main-imagen-boto un contenedor grid */
+    grid-template-columns: 1fr; /* Establecer 1 columna */
     grid-template-rows: 600px;
     justify-items: center;
     align-items: center;
@@ -139,8 +141,12 @@ body {
 
 .galeria__imagenes {
     height: 80%;
-    display: grid;
+    display: grid; /* Volver galeria__imagenes un contenedor grid */
+    /* Establecer tantas columnas auto ajustable como sea necesario */
+    /* Tamaño minimo 30% del ancho */
+    /* Tamaño máximo 1 fracción */
     grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+    /* Todas las filas que se requieran tomaran un valor de 310px */
     grid-auto-rows: 310px;
     overflow-y: auto;
 }
@@ -170,9 +176,9 @@ body {
     background-color: var(--octonary-color);
     border-radius: 8px;
     border: 1px solid var(--septenary-color);
-    display: grid;
-    grid-template-rows: repeat(12, 1fr);
-    grid-template-rows: repeat(7, 1fr);
+    display: grid; /* Volver contenedor-testimonio un contenedor grid */
+    grid-template-rows: repeat(12, 1fr); /* Establecer 12 columnas iguales */
+    grid-template-rows: repeat(7, 1fr); /* Establecer filas iguales */
 }
 
 .contenedor-testimonio-titulo {
@@ -183,20 +189,20 @@ body {
 }
 
 .contenedor-testimonio-avatar {
-    grid-column: 1/4;
-    grid-row: 3/6;
+    grid-column: 1/4; /* Elemento va de la columna 1 a la 4 */
+    grid-row: 3/6; /* Elemento va de la fila 3 a la 6 */
     font-size: 40px;
 }
 
 .contenedor-testimonio-usuario {
-    grid-column: 5/12;
-    grid-row: 3/4;
+    grid-column: 5/12; /* Elemento va de la columna 5 a la 12 */
+    grid-row: 3/4; /* Elemento va de la columna 3 a la 4 */
     text-align: left;
 }
 
 .contenedor-testimonio-comentario {
-    grid-column: 5/12;
-    grid-row: 4/7;
+    grid-column: 5/12; /* Elemento va de la columna 5 a la 12 */
+    grid-row: 4/7; /* Elemento va de la fila 4 a la 7 */
     text-align: left;
 }
 
@@ -210,41 +216,43 @@ body {
 
 .contenedor-formulario {
     margin: 10px;
-    display: grid;
+    display: grid; /* Volver contenedor-formulario un contenedor grid */
+    /* Establecer 15 columnas distribuidas equitativamente */
     grid-template-columns: repeat(15, 1fr);
+    /* La fila tomara un tamaño proporcional al elemento contenido */
     grid-auto-rows: auto;
-    gap: 15px 0px
-    /* grid-template-rows: repeat(11, 1fr); */
+    /* Establecer un espacio de 15px entre filas y 0px entre columnas */
+    gap: 15px 0px; 
 }
 
 .formulario-titulo {
-    grid-column: 2/15;
-    grid-row: 1;
+    grid-column: 2/15; /* Elemento va de la columna 2 a la 15 */
+    grid-row: 1; /* Elemento va a ocupar la fila 1 */
 }
 
 .formulario-nombre {
     display: flex;
     flex-direction: column;
-    grid-column: 2/15;
-    grid-row: 2;
+    grid-column: 2/15; /* Elemento va de la columna 2 a la 15 */
+    grid-row: 2; /* Elemento va a ocupar la fila 2 */
 }
 .formulario-correo {
     display: flex;
     flex-direction: column;
-    grid-column: 2/15;
-    grid-row: 3;
+    grid-column: 2/15; /* Elemento va de la columna 2 a la 15 */
+    grid-row: 3; /* Elemento va a ocupar la fila 3 */
 }
 
 .formulario-caja-texto {
     display: flex;
     flex-direction: column;
-    grid-column: 2/15;
-    grid-row: 4;
+    grid-column: 2/15; /* Elemento va de la columna 2 a la 15 */
+    grid-row: 4; /* Elemento va a ocupar la fila 4 */
 }
 
 .formulario-boton {
-    grid-column: 7/10;
-    grid-row: 5;
+    grid-column: 7/10; /* Elemento va de la columna 7 a la 10 */
+    grid-row: 5; /* Elemento va a ocupar la fila 5 */
     border: none;
     border-radius: 10px;
     cursor: pointer;
@@ -268,7 +276,7 @@ textarea {
 
 .pie-pagina {
     background-color: var(--octonary-color);
-    display: grid;
+    display: grid; /* Volver pie-pagina un contenedor grid */
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     grid-auto-rows: auto;
     height: 80px;
